@@ -1,5 +1,4 @@
 import "./globals.css";
-import { ClerkProvider } from '@clerk/nextjs';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ImageKitProvider from "@/components/ImageKitProvider";
@@ -26,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
+    
       <html lang="en">
         <body className={`${playFont.variable} ${poppinsFont.variable}`}>
           <ImageKitProvider>
@@ -36,6 +35,6 @@ export default function RootLayout({ children }) {
           </ImageKitProvider>
         </body>
       </html>
-    </ClerkProvider>
+   
   );
 }
