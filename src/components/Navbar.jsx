@@ -5,11 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import { IKImage } from "imagekitio-react";
-import {
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -193,21 +189,7 @@ export default function Navbar() {
             </li>
           ))}
 
-          {/* AUTH */}
-          <SignedOut>
-            <li className={isActive("/login") ? styles.active : ""}>
-              <Link href="/login" onClick={closeAllMenus} className={styles.login}>Login</Link>
-            </li>
-          </SignedOut>
-
-          <SignedIn>
-            <li className={isActive("/write") ? styles.active : ""}>
-              <Link href="/write" onClick={closeAllMenus}>Write</Link>
-            </li>
-            <li className={styles.userButton}>
-              <UserButton redirectUrl="/" />
-            </li>
-          </SignedIn>
+         
         </ul>
       </div>
     </nav>
