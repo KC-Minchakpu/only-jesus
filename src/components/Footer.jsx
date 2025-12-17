@@ -2,7 +2,7 @@
 import styles from "./Footer.module.css";
 import { FaFacebookF, FaInstagram, FaArrowUp, FaTwitter } from "react-icons/fa";
 import Link from "next/link"; 
-import Image from 'next/image';
+import { IKImage } from "imagekitio-react";
 
 
 export default function Footer() {
@@ -17,7 +17,13 @@ export default function Footer() {
         {/* Left Column: Logo */}
         <div className={styles.left}>
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" className={styles.logo} width={100} height={100} />
+            <IKImage
+              path="/logo.png"
+              alt="Logo"
+              className={styles.logo}
+              width={157}
+              height={64}
+            />
           </Link>
         </div>
 
