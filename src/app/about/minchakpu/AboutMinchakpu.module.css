@@ -1,0 +1,98 @@
+.aboutSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e354b;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 3.5rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+/* Image column */
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+/* Text column */
+.text {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text p {
+  margin-bottom: 1.5rem;
+}
+
+.text em {
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .imageWrapper {
+    align-items: center;
+    text-align: center;
+  }
+
+  .link {
+    text-align: center;
+  }
+}
+
+.button {
+  display: inline-flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background-color: #13294b;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.button span {
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #0f1f3a;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
