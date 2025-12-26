@@ -38,12 +38,12 @@ export default function Navbar() {
 
   const qaLinks = [
     "church",
-    "faith-doubt",
+    "faith and doubt",
     "homosexuality",
-    "living-christianity",
+    "christian living",
     "personal-matters",
     "politics",
-    "prayer",
+    "prayers",
     "marriage",
     "dating",
   ];
