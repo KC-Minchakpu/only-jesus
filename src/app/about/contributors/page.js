@@ -1,7 +1,12 @@
-const ContributorsPage = () => {
-  return (
-    <div className=""><h2>Contributors Page</h2></div>
-  )
-}
+import Contributors from "@/components/Contributors";
 
-export default ContributorsPage
+export default function ContributorsPage() {
+  return (
+    <main>
+      <h1 style={{ textAlign: "center", marginTop: "3rem", fontFamily: 'Play, sans-serif', color: '#555', fontSize: '2.5rem' }}>
+        Our Contributors
+      </h1>
+      <Contributors />
+    </main>
+  );
+}
